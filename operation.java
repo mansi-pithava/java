@@ -1,7 +1,5 @@
-public class BitwiseOperations {
-
+public class operation {
     public static void main(String[] args) {
-        // Byte
         byte aByte = 0b0000101;
         byte bByte = 0b0011001;
 
@@ -57,5 +55,7 @@ public class BitwiseOperations {
         System.out.println("aLong | bLong = " + (al | bl)); // Bitwise OR
         System.out.println("aLong ^ bLong = " + (al ^ bl)); // Bitwise XOR
         System.out.println("~aLong = " + (~a)); // Bitwise Complement
+
     }
+    
 }
