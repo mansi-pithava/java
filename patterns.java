@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class pattern 
+public class patterns 
 {
     public static void main(String[] args)
      {
