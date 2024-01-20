@@ -1,4 +1,5 @@
-class f extends Thread{
+class f extends Thread
+{
     int i;
     public void run()
     {
@@ -8,7 +9,8 @@ class f extends Thread{
       } 
     }
 }
-class s extends Thread{
+class s extends Thread
+{
     int j;
     public void run()
     {
