@@ -1,4 +1,4 @@
-class first extends Thread{
+class f extends Thread{
     int i;
     public void run()
     {
@@ -8,7 +8,7 @@ class first extends Thread{
       } 
     }
 }
-class second extends Thread{
+class s extends Thread{
     int j;
     public void run()
     {
@@ -23,8 +23,8 @@ public class multithreading {
     public static void main(String[] args) {
         
     
-    first f1=new first();
-    second s1=new second();
+    f f1=new f();
+    s s1=new s();
     f1.start();
     s1.start();
     }    
