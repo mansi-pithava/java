@@ -21,8 +21,11 @@ public class clon  implements Cloneable
          // clonning bb=aa;
         //  System.out.println("x="+bb.x+"   y="+bb.y);
         //  //object clonning 
-         clon bb=(clon)aa.clone();
+         clon bb=(clon)aa.clone();//constructer through
+        //clon bb=new clon(34,"nooice");
          aa.x=89;
+         //aa.y="allen";
+         bb.x=54;
          bb.y="mark-otto";
        System.out.println("change the value of x for obj aa x= "+aa.x+"   y="+aa.y);
        System.out.println("change the value of y for obj bb x= "+bb.x+"   y="+bb.y);
