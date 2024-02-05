@@ -13,6 +13,8 @@ class inner{
         temp=x;
         x=y;
         y=temp;
+    System.out.println("x="+x+"y="+y);
+
 
     }
 }
@@ -22,6 +24,8 @@ void ip1()
     temp=a;
     a=b;
     b=temp;
+    System.out.println("a="+a+"b="+b);
+
 }
   inner i=new inner();
   void op()  
