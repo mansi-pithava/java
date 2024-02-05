@@ -28,7 +28,17 @@ public class multithreading {
     f f1=new f();
     s s1=new s();
     f1.start();
+    System.out.println(f1.isAlive());
+    try{
+      f1.join();
+    }
+    catch(InterruptedException i)
+    {
+
+    }
     s1.start();
-    }    
+   System.out.println();
+    
+   }    
     
 }
