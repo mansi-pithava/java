@@ -6,7 +6,7 @@ public class byte_stream {
      */
     public static void main(String[] args)throws IOException 
     {
-        File f1=new File("bt.txt");
+       /* File f1=new File("bt.txt");
         if(f1.createNewFile())
         {
             System.out.println("created");
@@ -51,18 +51,20 @@ public class byte_stream {
        fd.writeChars(ss);//no any diffr symbol
        fd.writeUTF(ss);//different symbol two differnt charcs
        fd.close();
+       */
        System.out.println("--------------------Random access file----------------------");
        RandomAccessFile rr=new RandomAccessFile("random.txt","rw");
-       rr.write("becholer degreee".getBytes());
-       rr.writeUTF("\nbecholer degreee");//garbage symbol
+     //  rr.write("becholer degreee".getBytes());
+     //  rr.writeUTF("\nbecholer degreee");//garbage symbol
 
-        rr.writeUTF("\nhello...");//garbage symbol
-        rr.write("\njava".getBytes());
-        System.out.println("\nposition="+rr.length());
-        System.out.println("\nfile pointer="+rr.getFilePointer());
+       // rr.writeUTF("\nhello...");//garbage symbol
+        //rr.write("\njava".getBytes());
+        //System.out.println("\nposition="+rr.length());
+        //System.out.println("\nfile pointer="+rr.getFilePointer());
         System.out.println("------------- h. w----------------");
-        rr.write("\n\nhello".getBytes());
-        rr.write("\njava".getBytes());
+        rr.write("\nhello".getBytes());
+        rr.seek(6);
+        rr.write("\nJAVA".getBytes());
         rr.write("\nlanguage".getBytes());
         rr.close();
     }
