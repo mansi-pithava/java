@@ -6,7 +6,7 @@ import java.awt.*;
 public class app extends Applet{
     public void paint(Graphics g)
     {
-        g.setColor(Color.BLACK);
+        g.setColor(Color.red);
         
         g.drawString("Parangat College Of Computer Science - halvad",50,50);
     }

@@ -1,7 +1,8 @@
 public class operation {
     public static void main(String[] args) {
-        byte aByte = 0b0000101;
-        byte bByte = 0b0011001;
+        /*
+        byte aByte;
+        byte bByte;
 
         System.out.println("Byte Operations:");
         System.out.println("aByte & bByte = " + (aByte & bByte)); // Bitwise AND
@@ -12,7 +13,7 @@ public class operation {
         System.out.println("aByte >> 2 = " + (aByte >> 2)); // Signed Right Shift
         System.out.println("aByte >>> 2 = " + (aByte >>> 2)); // Unsigned Right Shift
         System.out.println();
-
+ */
         // Char
         char aC = 'A';
         char bC = 'B';
