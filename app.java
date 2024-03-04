@@ -8,6 +8,9 @@ public class app extends Applet{
     {
         g.setColor(Color.red);
         g.drawString("Parangat College Of Computer Science - halvad",50,50);
+       // FontMetrics f=new FontMetrics();
+            
+        
 
     }
 }
