@@ -1,4 +1,6 @@
-import java.applet.*;
+
+//import java.applet.*;
+import java.applet.Applet;
 import java.awt.*;
 /*
  * <applet code="panel_frame.class" height="500" width="500">
@@ -7,15 +9,30 @@ import java.awt.*;
 
 public class panel_frame extends Applet {
     public void init() {
-        
-        setLayout(new BorderLayout());
-        Panel p1 = new Panel();
-        Button b = new Button("name");
-        p1.add(b);
-        add(p1,"North");
-        Checkbox c=new Checkbox("blue",false);//first chkbox
-        p1.add(c);
-        add(p1,"Center");
+        Panel p = new Panel();
+        Button b = new Button("btn ");
+        Button b1 = new Button("btn 1");
+        p.add(b);
+        p.add(b1);
+        p.setBounds(200, 100, 150, 150);
+
+        add(p, "North");
+        add(p, "South");
+        Label l = new Label("mansi pithava", Label.RIGHT);
+        Label l1 = new Label("allen mark auto", Label.CENTER);
+        add(l1);
+        add(l);
+        // choice
+        Choice ch = new Choice();
+        ch.addItem("rajasthan");
+        ch.addItem("maharashtra");
+        ch.addItem("up");
+        ch.addItem("bihar");
+        ch.addItem("gujarat");
+        ch.addItem("telangana");
+        ch.addItem("keral");
+        ch.addItem("vishakhapattanam");
+        ch.addItem("abc");
     }
 
 }
