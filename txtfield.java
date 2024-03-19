@@ -12,7 +12,6 @@ public void init()
     FlowLayout fl=new FlowLayout(FlowLayout.LEFT);
     Panel p=new Panel();
     Panel p1=new Panel(); 
-        
     Label lnm=new Label("Name",Label.RIGHT);
     name=new TextField(12);
     Label lps=new Label("\nPassword",Label.RIGHT);
@@ -21,14 +20,12 @@ public void init()
    p.add(lnm);
     p.add(name);
     add(p,"NORTH");
-
    p1.add(lps);
    p1.add(pass);
    add(p1,"SOUTH");
     b1=new Button("clickme");
     add(b1);
     b1.addActionListener(this);
-
 }
 public void actionPerformed(ActionEvent ae)
 {
@@ -37,9 +34,7 @@ public void actionPerformed(ActionEvent ae)
 public void paint(Graphics g)
 {
     Font f=new Font("serif",Font.BOLD,20);
-   
     g.setFont(f);
-
     g.drawString("Name       :"+name.getText(),6,100);
     g.drawString("password   :"+pass.getText(),6,150 );
 }

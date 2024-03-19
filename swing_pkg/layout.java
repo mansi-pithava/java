@@ -1,3 +1,4 @@
+package swing_pkg;
 import java.awt.*;
 import javax.swing.*;
 public class layout //1

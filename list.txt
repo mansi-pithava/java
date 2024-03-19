@@ -1,0 +1,106 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace control
+{
+    public partial class list : Form
+    {
+        public list()
+        {
+            InitializeComponent();
+        }
+
+        private void lst_name_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_view_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_one_Click(object sender, EventArgs e)
+        {
+            listbox2.Items.Add(lst_name.SelectedItem);
+            lst_name.Items.Remove(lst_name.SelectedItem);
+        }
+
+        private void listbox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_multiple_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < lst_name.Items.Count;i++)
+            {
+                if(lst_name.GetSelected(i)==true)
+                {
+                    listbox2.Items.Add(lst_name.Items[i]);
+                    lst_name.Items.Remove(lst_name.Items[i]);
+                    i--;
+                }
+            }
+            
+        }
+
+        private void list_Load(object sender, EventArgs e)
+        {
+            lst_name.Items.Add("pqr");
+            lst_name.Items.Add("pqasr");
+            lst_name.Items.Add("pqrxaad");
+            lst_name.Items.Add("pqrdsf");
+            lst_name.Items.Add("pqrds");
+            lst_name.Items.Add("pdsr");
+            lst_name.Items.Add("pdkdr");
+            lst_name.Items.Add("pdjdujdr");
+        }
+
+        private void btn_all_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < lst_name.Items.Count; i++)
+            {
+                listbox2.Items.Add(lst_name.Items[i]);
+                //lst_name.Items.Remove(listbox2.Items[i]);
+            }
+            lst_name.Items.Clear();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            lst_name.Items.Add(listbox2.SelectedItem);
+            listbox2.Items.Remove(listbox2.SelectedItem);
+        }
+
+        private void btn_2_Click(object sender, EventArgs e)
+        {
+            for(int i=0;i<listbox2.Items.Count;i++)
+            {
+                if (listbox2.GetSelected(i)==true)
+                {
+                    lst_name.Items.Add(listbox2.Items[i]);
+                    listbox2.Items.Remove(listbox2.Items[i]);
+                    i--;
+                }
+            }
+        }
+
+        private void btn3_all_Click(object sender, EventArgs e)
+        {
+            for(int i=0;i<listbox2.Items.Count;i++)
+            {
+                lst_name.Items.Add(listbox2.Items[i]);
+            }
+            listbox2.Items.Clear();
+        }
+    }
+}
