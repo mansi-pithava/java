@@ -1,13 +1,16 @@
 import java.awt.*;
 
-public class menu extends Frame {
+public class menu {
     /**
      * @param title
      */
-    menu(String title) {
-        super(title);
+  public static void main(String[] args){
+    Frame f=new Frame();
         MenuBar m = new MenuBar();
-        setMenuBar(m);
+        f.setSize(300, 300);
+        f.setVisible(true);
+
+       f.setMenuBar(m);
         Menu file = new Menu("file");
         m.add(file);
         MenuItem open = new MenuItem("open");
@@ -26,13 +29,7 @@ public class menu extends Frame {
         edit.add(copy);
         MenuItem paste = new MenuItem("paste");
         edit.add(paste);
-
+  }
     }
 
-    public static void main(String[] args) {
-        menu mm = new menu("demo of menu");
-        mm.setSize(300, 300);
-        mm.setVisible(true);
-    }
-
-}
+   

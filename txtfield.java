@@ -9,7 +9,8 @@ Button b1;
 public void init()
 {
     //Font f=new Font();
-    FlowLayout fl=new FlowLayout(FlowLayout.LEFT);
+   // FlowLayout fl=new FlowLayout(FlowLayout.LEFT);
+
     Panel p=new Panel();
     Panel p1=new Panel(); 
     Label lnm=new Label("Name",Label.RIGHT);
